@@ -1,0 +1,11 @@
+SlotUnlock.png
+size:707,977
+filter:Linear,Linear
+pma:true
+UI_levelup_01
+bounds:2,2,472,973
+offsets:1,78,474,1052
+UI_levelup_02
+bounds:476,376,599,229
+offsets:36,0,669,229
+rotate:90

@@ -1,0 +1,11 @@
+hand.png
+size:270,154
+filter:Linear,Linear
+pma:true
+Ellipse 721
+bounds:2,45,107,107
+offsets:1,0,108,108
+hand
+bounds:111,2,150,157
+offsets:5,2,165,167
+rotate:90
