@@ -27,7 +27,6 @@ public class GamePlayController : MonoBehaviour
                     Transform select = hit.transform;
                     //AnimalCarController car = select.GetComponent<AnimalCarController>();
                     Stickman stick = select.GetComponent<Stickman>();
-                    Debug.Log("Stickman");
                     stick.MoveToCar();
                 }
                 //}
