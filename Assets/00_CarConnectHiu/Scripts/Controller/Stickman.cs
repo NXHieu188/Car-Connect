@@ -77,7 +77,13 @@ public class Stickman : MonoBehaviour
     }
     void OnChangeWavePoint(int i)
     {
-        lstOldPath.Add(arrayOriginPosLine[i]);
+        if(i > 0)
+        {
+            lstPointPath.RemoveAt(0);
+            lineRenderer.positionCount = lstPointPath.Count;
+            lineRenderer.SetPositions(lstPointPath.ToArray());
+        }
+        //lstOldPath.Add(arrayOriginPosLine[i]);
         Vector3 nextPos = GetNextPos(i);
         if (nextPos != Vector3.zero)
         {
@@ -105,40 +111,40 @@ public class Stickman : MonoBehaviour
     }
     private void Update()
     {
-        if (isRunning)
-        {
-            if (lineRenderer.positionCount > 1)
-            {
-                lineRenderer.SetPosition(0, transform.position);
-                if (Vector3.Distance(transform.position, lineRenderer.GetPosition(1)) <= pointRemoveThreshold)
-                {
-                    RemovePoint();
-                }
-            }
-        }
-        if (isRunningBack)
-        {
-            if (lineRenderer.GetPosition(0) != arrayOriginPosLine[0])
-            {
-                lineRenderer.SetPosition(0, transform.position);
-                if (indexRemove > 0)
-                {
-                    if (Vector3.Distance(transform.position, arrayOriginPosLine[indexRemove]) <= pointRemoveThreshold)
-                    {
-                        //lineRenderer.SetPosition(0, arrayOriginPosLine[indexRemove]);
-                        AddPoint(arrayOriginPosLine[indexRemove]);
-                        indexRemove--;
-                    }
-                }
-                else
-                {
-                    if (Vector3.Distance(transform.position, arrayOriginPosLine[0]) <= pointRemoveThreshold)
-                    {
-                        lineRenderer.SetPosition(0, arrayOriginPosLine[0]);
-                    }
-                }
-            }
-        }
+        //if (isRunning)
+        //{
+        //    if (lineRenderer.positionCount > 1)
+        //    {
+        //        lineRenderer.SetPosition(0, transform.position);
+        //        if (Vector3.Distance(transform.position, lineRenderer.GetPosition(1)) <= pointRemoveThreshold)
+        //        {
+        //            RemovePoint();
+        //        }
+        //    }
+        //}
+        //if (isRunningBack)
+        //{
+        //    if (lineRenderer.GetPosition(0) != arrayOriginPosLine[0])
+        //    {
+        //        lineRenderer.SetPosition(0, transform.position);
+        //        if (indexRemove > 0)
+        //        {
+        //            if (Vector3.Distance(transform.position, arrayOriginPosLine[indexRemove]) <= pointRemoveThreshold)
+        //            {
+        //                //lineRenderer.SetPosition(0, arrayOriginPosLine[indexRemove]);
+        //                AddPoint(arrayOriginPosLine[indexRemove]);
+        //                indexRemove--;
+        //            }
+        //        }
+        //        else
+        //        {
+        //            if (Vector3.Distance(transform.position, arrayOriginPosLine[0]) <= pointRemoveThreshold)
+        //            {
+        //                lineRenderer.SetPosition(0, arrayOriginPosLine[0]);
+        //            }
+        //        }
+        //    }
+        //}
     }
     private void RemovePoint()
     {
@@ -167,7 +173,7 @@ public class Stickman : MonoBehaviour
                 isCanMove = false;
                 isRunning = false;
                 SetRumAnim(false);
-                Comeback();
+                //Comeback();
             }
             else
             {
