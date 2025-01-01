@@ -124,7 +124,7 @@
       "url": "https://packages.unity.com"
     },
     "uk.lunalabs.luna": {
-      "version": "file:D:/Hieu500GBZone/LunaDownload/6.2.0/scripts",
+      "version": "file:D:/Programmer/PlayableAds/Luna/LunaDownload/6.2.0/scripts",
       "depth": 0,
       "source": "local",
       "dependencies": {}

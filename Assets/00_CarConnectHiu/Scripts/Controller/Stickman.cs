@@ -1,16 +1,24 @@
 ﻿using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Stickman : MonoBehaviour
 {
+    public Transform arrayLinePoint;
     public TypeColor typeColor;
     public Animator animator;
     private List<Vector3> lstPointPath = new List<Vector3>();
-    private List<Vector3> lstOldPath = new List<Vector3>();
-    public Vector3[] arrayOriginPosLine;
-    public Vector3[] arrOldPath;
+
+    private List<Vector3> lstCachePointPath = new List<Vector3>();
+
+    private List<Vector3> lstPointReturnPath = new List<Vector3>();
+
+    private List<Vector3> lstPointLineReturn = new List<Vector3>();
+
+    //public Vector3[] arrayOriginPosLine;
+    //public Vector3[] arrOldPath;
     public LineRenderer lineRenderer;
     public float speed;
     public float timeRotate;
@@ -20,14 +28,26 @@ public class Stickman : MonoBehaviour
     public float pointRemoveThreshold = 0.1f;
     int indexRemove = 0;
     private Vector3 originRotation;
+
     public void Init()
     {
         isCanMove = true;
-        arrayOriginPosLine = new Vector3[lineRenderer.positionCount];
+        lstPointPath.Clear();
+        lstCachePointPath.Clear();
+        lstPointReturnPath.Clear();
+        lstPointLineReturn.Clear();
+        lineRenderer.positionCount = arrayLinePoint.childCount;
+        for (int i = 0; i < arrayLinePoint.childCount; i++)
+        {
+            lineRenderer.SetPosition(i, arrayLinePoint.GetChild(i).transform.position);
+        }
+
         for (int i = 0; i < lineRenderer.positionCount; i++)
         {
-            arrayOriginPosLine[i] = lineRenderer.GetPosition(i);
+            lstPointPath.Add(lineRenderer.GetPosition(i));
+            lstCachePointPath.Add(lineRenderer.GetPosition(i));
         }
+
         originRotation = transform.eulerAngles;
     }
 
@@ -35,133 +55,84 @@ public class Stickman : MonoBehaviour
     {
         if (isCanMove)
         {
-
-            isCanMove = false;
-            isRunning = true;
-            indexRemove = 0;
-            lstPointPath.Clear();
-            lstOldPath.Clear();
-            for (int i = 0; i < lineRenderer.positionCount; i++)
-            {
-                lstPointPath.Add(lineRenderer.GetPosition(i));
-            }
+            Init();
             SetRumAnim(true);
             transform.DOPath(lstPointPath.ToArray(), speed, PathType.Linear, PathMode.Full3D).SetSpeedBased(true)
-                .SetEase(Ease.Linear).OnWaypointChange(OnChangeWavePoint).OnComplete(() =>
+                .SetEase(Ease.Linear).OnWaypointChange(OnChangeWavePoint).OnUpdate(() =>
                 {
-                    isRunning = false;
-                });
+                    lineRenderer.SetPosition(0, transform.position);
+                }).OnComplete(() => { isCanMove = true; });
         }
     }
 
+    private int curLineCount = 0;
     void Comeback()
     {
+        lstPointReturnPath.Reverse();
+        lstPointPath.Reverse();
+        lstPointLineReturn.AddRange(lstPointPath.ToArray());
+        lstPointLineReturn.AddRange(lstPointReturnPath.ToArray());
         SetRumAnim(true);
         isRunningBack = true;
-        arrOldPath = new Vector3[lstOldPath.Count];
-        var index = 0;
-        for (int i = lstOldPath.Count - 1; i >= 0; i--)
-        {
-            arrOldPath[index] = lstOldPath[i];
-            index++;
-
-        }
-        transform.DOPath(arrOldPath, speed, PathType.Linear, PathMode.Full3D).SetSpeedBased(true)
-            .SetEase(Ease.Linear).OnWaypointChange(OnOldPathChangePoint).OnComplete(() =>
+        curLineCount = lineRenderer.positionCount - 1;
+        transform.DOPath(lstPointReturnPath.ToArray(), speed, PathType.Linear, PathMode.Full3D).SetSpeedBased(true)
+            .SetEase(Ease.Linear)
+            .OnWaypointChange(OnReturnPathChangePoint).OnUpdate(() =>
+            {
+                lineRenderer.SetPosition(lineRenderer.positionCount - 1, transform.position);
+            }).OnComplete(() =>
             {
                 SetRumAnim(false);
                 isCanMove = true;
-                isRunningBack = false;
                 transform.eulerAngles = originRotation;
+                lstPointPath.Clear();
+                lstPointPath.AddRange(lstCachePointPath);
             });
     }
+
     void OnChangeWavePoint(int i)
     {
-        if(i > 0)
-        {
-            lstPointPath.RemoveAt(0);
-            lineRenderer.positionCount = lstPointPath.Count;
-            lineRenderer.SetPositions(lstPointPath.ToArray());
-        }
-        //lstOldPath.Add(arrayOriginPosLine[i]);
+        lstPointReturnPath.Add(lstPointPath[0]);
+        lstPointPath.RemoveAt(0);
+        lineRenderer.positionCount = lstPointPath.Count;
+        lineRenderer.SetPositions(lstPointPath.ToArray());
         Vector3 nextPos = GetNextPos(i);
         if (nextPos != Vector3.zero)
         {
             transform.LookAt(nextPos);
         }
     }
-    void OnOldPathChangePoint(int i)
+
+    void OnReturnPathChangePoint(int i)
     {
-        if (i == 0)
-            return;
-        Vector3 nextPos = Vector3.zero;
-        nextPos = GetNextOldPathPos(i - 1);
+        curLineCount++;
+        lineRenderer.positionCount = curLineCount;
+        var arrayCurPoint = new Vector3[lineRenderer.positionCount];
+        for (int j = 0; j < lstPointLineReturn.Count; j++)
+        {
+            if (j < lineRenderer.positionCount)
+            {
+                arrayCurPoint[j] = lstPointLineReturn[j];
+            }
+        }
+        lineRenderer.SetPositions(arrayCurPoint);
+        Vector3 nextPos = GetNextReturnPathPos(i);
         if (nextPos != Vector3.zero)
         {
             transform.LookAt(nextPos);
         }
     }
+
     Vector3 GetNextPos(int i)
     {
-        return arrayOriginPosLine[i];
+        return lstPointPath[i];
     }
-    Vector3 GetNextOldPathPos(int i)
+
+    Vector3 GetNextReturnPathPos(int i)
     {
-        return arrOldPath[arrOldPath.Length - 1];
+        return lstPointReturnPath[i];
     }
-    private void Update()
-    {
-        //if (isRunning)
-        //{
-        //    if (lineRenderer.positionCount > 1)
-        //    {
-        //        lineRenderer.SetPosition(0, transform.position);
-        //        if (Vector3.Distance(transform.position, lineRenderer.GetPosition(1)) <= pointRemoveThreshold)
-        //        {
-        //            RemovePoint();
-        //        }
-        //    }
-        //}
-        //if (isRunningBack)
-        //{
-        //    if (lineRenderer.GetPosition(0) != arrayOriginPosLine[0])
-        //    {
-        //        lineRenderer.SetPosition(0, transform.position);
-        //        if (indexRemove > 0)
-        //        {
-        //            if (Vector3.Distance(transform.position, arrayOriginPosLine[indexRemove]) <= pointRemoveThreshold)
-        //            {
-        //                //lineRenderer.SetPosition(0, arrayOriginPosLine[indexRemove]);
-        //                AddPoint(arrayOriginPosLine[indexRemove]);
-        //                indexRemove--;
-        //            }
-        //        }
-        //        else
-        //        {
-        //            if (Vector3.Distance(transform.position, arrayOriginPosLine[0]) <= pointRemoveThreshold)
-        //            {
-        //                lineRenderer.SetPosition(0, arrayOriginPosLine[0]);
-        //            }
-        //        }
-        //    }
-        //}
-    }
-    private void RemovePoint()
-    {
-        lstPointPath.RemoveAt(0);
-        lineRenderer.positionCount = lstPointPath.Count;
-        for (int i = 0; i < lineRenderer.positionCount; i++)
-        {
-            lineRenderer.SetPosition(i, lstPointPath[i]);
-        }
-        indexRemove++;
-    }
-    private void AddPoint(Vector3 pos)
-    {
-        lstPointPath.Insert(0, pos);
-        lineRenderer.positionCount = lstPointPath.Count;
-        lineRenderer.SetPositions(lstPointPath.ToArray());
-    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Car"))
@@ -169,15 +140,15 @@ public class Stickman : MonoBehaviour
             var car = other.GetComponent<Car>();
             if (car.typeColor != typeColor)
             {
-                this.transform.DOKill();
+                transform.DOKill();
                 isCanMove = false;
                 isRunning = false;
                 SetRumAnim(false);
-                //Comeback();
+                Comeback();
             }
             else
             {
-                this.transform.DOKill();
+                transform.DOKill();
                 isCanMove = false;
                 isRunning = false;
                 SetRumAnim(false);

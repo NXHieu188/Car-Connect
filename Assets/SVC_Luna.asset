@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -777816280, guid: c37d12739cb1c61449b5e9ad80c284fe, type: 3}
+  m_Script: {fileID: -777816280, guid: 6da2ad20e2e2fdb44a3b2977af1c3cef, type: 3}
   m_Name: SVC_Luna
   m_EditorClassIdentifier: 
   _svcLunaVersion: 3
@@ -971,7 +971,7 @@ MonoBehaviour:
     keywords: []
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 676
+  version: 801
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0

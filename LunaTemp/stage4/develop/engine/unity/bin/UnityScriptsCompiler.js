@@ -1,6 +1,6 @@
-if ( TRACE ) { TRACE( JSON.parse( '["SingletonMono$1#init","SingletonMono$1#Awake","Car#Action","DefineHelper#init","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","EventDispatcher#Instance#get","EventDispatcher#Instance#set","EventDispatcher#HasInstance","EventDispatcher#init","EventDispatcher#Awake","EventDispatcher#OnDestroy","EventDispatcher#RegisterListener","EventDispatcher#PostEvent","EventDispatcher#RemoveListener","EventDispatcher#ClearAllListener","EventDispatcherExtension#RegisterListener","EventDispatcherExtension#PostEvent$1","EventDispatcherExtension#PostEvent","EventDispatcherExtension#RemoveListener","GamePlayController#init","GamePlayController#Update","GamePlayController#Touch","Level#init","Level#Start","NameTag#init","SingletonWithouMono$1#Instance#get","SingletonWithouMono$1#init","SingletonWithouMono$1#init","SingletonWithouMono$1#Initialize","SingletonWithouMono$1#Preload","Stickman#init","Stickman#Init","Stickman#Action","Stickman#Comeback","Stickman#OnChangeWavePoint","Stickman#OnOldPathChangePoint","Stickman#GetNextPos","Stickman#GetNextOldPathPos","Stickman#Update","Stickman#RemovePoint","Stickman#AddPoint","Stickman#OnTriggerEnter","Stickman#SetRumAnim","VectorUlti#GetVectorFromAngle","VectorUlti#GetAngleFromVector","VectorUlti#Set$1","VectorUlti#Set","VectorUlti#Move","VectorUlti#ToVectorXZ","Singleton$1#Instance#get","AudioManager#inherits","AudioManager#PlaySoundBG","AudioManager#PlaySoundClipPass","AudioManager#PlaySoundClipWarning","AudioManager#PlaySoundClipLose","AudioManager#PlaySoundClipAwesome","AudioManager#PlaySoundClipWin","AudioManager#PlaySoundFX","AudioManager#PlaySound","AudioManager#StopSound","GlobalInstance#inherits","GlobalInstance#init","PLY01Manager#inherits","PLY01Manager#Start","PLY01Manager#Update","PLY01Manager#InstallFullGame","SingletonDontDestroyOnLoad$1#Awake"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["SingletonMono$1#init","SingletonMono$1#Awake","Car#Action","DefineHelper#init","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","EventDispatcher#Instance#get","EventDispatcher#Instance#set","EventDispatcher#HasInstance","EventDispatcher#init","EventDispatcher#Awake","EventDispatcher#OnDestroy","EventDispatcher#RegisterListener","EventDispatcher#PostEvent","EventDispatcher#RemoveListener","EventDispatcher#ClearAllListener","EventDispatcherExtension#RegisterListener","EventDispatcherExtension#PostEvent$1","EventDispatcherExtension#PostEvent","EventDispatcherExtension#RemoveListener","GamePlayController#init","GamePlayController#Update","GamePlayController#Touch","Level#init","Level#Start","NameTag#init","SingletonWithouMono$1#Instance#get","SingletonWithouMono$1#init","SingletonWithouMono$1#init","SingletonWithouMono$1#Initialize","SingletonWithouMono$1#Preload","Stickman#init","Stickman#Init","Stickman#Action","Stickman#Comeback","Stickman#OnChangeWavePoint","Stickman#OnReturnPathChangePoint","Stickman#GetNextPos","Stickman#GetNextReturnPathPos","Stickman#OnTriggerEnter","Stickman#SetRumAnim","VectorUlti#GetVectorFromAngle","VectorUlti#GetAngleFromVector","VectorUlti#Set$1","VectorUlti#Set","VectorUlti#Move","VectorUlti#ToVectorXZ","Singleton$1#Instance#get","AudioManager#inherits","AudioManager#PlaySoundBG","AudioManager#PlaySoundClipPass","AudioManager#PlaySoundClipWarning","AudioManager#PlaySoundClipLose","AudioManager#PlaySoundClipAwesome","AudioManager#PlaySoundClipWin","AudioManager#PlaySoundFX","AudioManager#PlaySound","AudioManager#StopSound","GlobalInstance#inherits","GlobalInstance#init","PLY01Manager#inherits","PLY01Manager#Start","PLY01Manager#Update","PLY01Manager#InstallFullGame","SingletonDontDestroyOnLoad$1#Awake"]' ) ); }
 /**
- * @version 1.0.9131.34681
+ * @version 1.0.9133.1627
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -3682,12 +3682,13 @@ if ( TRACE ) { TRACE( "SingletonWithouMono$1#Preload", this ); }
     Bridge.define("Stickman", {
         inherits: [UnityEngine.MonoBehaviour],
         fields: {
+            arrayLinePoint: null,
             typeColor: 0,
             animator: null,
             lstPointPath: null,
-            lstOldPath: null,
-            arrayOriginPosLine: null,
-            arrOldPath: null,
+            lstCachePointPath: null,
+            lstPointReturnPath: null,
+            lstPointLineReturn: null,
             lineRenderer: null,
             speed: 0,
             timeRotate: 0,
@@ -3696,7 +3697,8 @@ if ( TRACE ) { TRACE( "SingletonWithouMono$1#Preload", this ); }
             isRunningBack: false,
             pointRemoveThreshold: 0,
             indexRemove: 0,
-            originRotation: null
+            originRotation: null,
+            curLineCount: 0
         },
         ctors: {
             init: function () {
@@ -3704,9 +3706,12 @@ if ( TRACE ) { TRACE( "Stickman#init", this ); }
 
                 this.originRotation = new UnityEngine.Vector3();
                 this.lstPointPath = new (System.Collections.Generic.List$1(UnityEngine.Vector3)).ctor();
-                this.lstOldPath = new (System.Collections.Generic.List$1(UnityEngine.Vector3)).ctor();
+                this.lstCachePointPath = new (System.Collections.Generic.List$1(UnityEngine.Vector3)).ctor();
+                this.lstPointReturnPath = new (System.Collections.Generic.List$1(UnityEngine.Vector3)).ctor();
+                this.lstPointLineReturn = new (System.Collections.Generic.List$1(UnityEngine.Vector3)).ctor();
                 this.pointRemoveThreshold = 0.1;
                 this.indexRemove = 0;
+                this.curLineCount = 0;
             }
         },
         methods: {
@@ -3715,12 +3720,20 @@ if ( TRACE ) { TRACE( "Stickman#init", this ); }
 if ( TRACE ) { TRACE( "Stickman#Init", this ); }
 
                 this.isCanMove = true;
-                this.arrayOriginPosLine = System.Array.init(this.lineRenderer.positionCount, function (){
-                    return new UnityEngine.Vector3();
-                }, UnityEngine.Vector3);
-                for (var i = 0; i < this.lineRenderer.positionCount; i = (i + 1) | 0) {
-                    this.arrayOriginPosLine[i] = this.lineRenderer.GetPosition(i);
+                this.lstPointPath.clear();
+                this.lstCachePointPath.clear();
+                this.lstPointReturnPath.clear();
+                this.lstPointLineReturn.clear();
+                this.lineRenderer.positionCount = this.arrayLinePoint.childCount;
+                for (var i = 0; i < this.arrayLinePoint.childCount; i = (i + 1) | 0) {
+                    this.lineRenderer.SetPosition(i, this.arrayLinePoint.GetChild(i).transform.position);
                 }
+
+                for (var i1 = 0; i1 < this.lineRenderer.positionCount; i1 = (i1 + 1) | 0) {
+                    this.lstPointPath.add(this.lineRenderer.GetPosition(i1));
+                    this.lstCachePointPath.add(this.lineRenderer.GetPosition(i1));
+                }
+
                 this.originRotation = this.transform.eulerAngles.$clone();
             },
             /*Stickman.Init end.*/
@@ -3730,18 +3743,12 @@ if ( TRACE ) { TRACE( "Stickman#Init", this ); }
 if ( TRACE ) { TRACE( "Stickman#Action", this ); }
 
                 if (this.isCanMove) {
-
-                    this.isCanMove = false;
-                    this.isRunning = true;
-                    this.indexRemove = 0;
-                    this.lstPointPath.clear();
-                    this.lstOldPath.clear();
-                    for (var i = 0; i < this.lineRenderer.positionCount; i = (i + 1) | 0) {
-                        this.lstPointPath.add(this.lineRenderer.GetPosition(i));
-                    }
+                    this.Init();
                     this.SetRumAnim(true);
-                    DG.Tweening.TweenSettingsExtensions.OnComplete(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.OnWaypointChange(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.SetSpeedBased$1(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.ShortcutExtensions.DOPath$1(this.transform, this.lstPointPath.ToArray(), this.speed, DG.Tweening.PathType.Linear, DG.Tweening.PathMode.Full3D), true), DG.Tweening.Ease.Linear), Bridge.fn.cacheBind(this, this.OnChangeWavePoint)), Bridge.fn.bind(this, function () {
-                        this.isRunning = false;
+                    DG.Tweening.TweenSettingsExtensions.OnComplete(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.OnUpdate(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.OnWaypointChange(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.SetSpeedBased$1(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.ShortcutExtensions.DOPath$1(this.transform, this.lstPointPath.ToArray(), this.speed, DG.Tweening.PathType.Linear, DG.Tweening.PathMode.Full3D), true), DG.Tweening.Ease.Linear), Bridge.fn.cacheBind(this, this.OnChangeWavePoint)), Bridge.fn.bind(this, function () {
+                        this.lineRenderer.SetPosition(0, this.transform.position);
+                    })), Bridge.fn.bind(this, function () {
+                        this.isCanMove = true;
                     }));
                 }
             },
@@ -3751,22 +3758,21 @@ if ( TRACE ) { TRACE( "Stickman#Action", this ); }
             Comeback: function () {
 if ( TRACE ) { TRACE( "Stickman#Comeback", this ); }
 
+                this.lstPointReturnPath.Reverse();
+                this.lstPointPath.Reverse();
+                this.lstPointLineReturn.AddRange(this.lstPointPath.ToArray());
+                this.lstPointLineReturn.AddRange(this.lstPointReturnPath.ToArray());
                 this.SetRumAnim(true);
                 this.isRunningBack = true;
-                this.arrOldPath = System.Array.init(this.lstOldPath.Count, function (){
-                    return new UnityEngine.Vector3();
-                }, UnityEngine.Vector3);
-                var index = 0;
-                for (var i = (this.lstOldPath.Count - 1) | 0; i >= 0; i = (i - 1) | 0) {
-                    this.arrOldPath[index] = this.lstOldPath.getItem(i).$clone();
-                    index = (index + 1) | 0;
-
-                }
-                DG.Tweening.TweenSettingsExtensions.OnComplete(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.OnWaypointChange(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.SetSpeedBased$1(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.ShortcutExtensions.DOPath$1(this.transform, this.arrOldPath, this.speed, DG.Tweening.PathType.Linear, DG.Tweening.PathMode.Full3D), true), DG.Tweening.Ease.Linear), Bridge.fn.cacheBind(this, this.OnOldPathChangePoint)), Bridge.fn.bind(this, function () {
+                this.curLineCount = (this.lineRenderer.positionCount - 1) | 0;
+                DG.Tweening.TweenSettingsExtensions.OnComplete(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.OnUpdate(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.OnWaypointChange(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.TweenSettingsExtensions.SetSpeedBased$1(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,DG.Tweening.Plugins.Core.PathCore.Path,DG.Tweening.Plugins.Options.PathOptions), DG.Tweening.ShortcutExtensions.DOPath$1(this.transform, this.lstPointReturnPath.ToArray(), this.speed, DG.Tweening.PathType.Linear, DG.Tweening.PathMode.Full3D), true), DG.Tweening.Ease.Linear), Bridge.fn.cacheBind(this, this.OnReturnPathChangePoint)), Bridge.fn.bind(this, function () {
+                    this.lineRenderer.SetPosition(((this.lineRenderer.positionCount - 1) | 0), this.transform.position);
+                })), Bridge.fn.bind(this, function () {
                     this.SetRumAnim(false);
                     this.isCanMove = true;
-                    this.isRunningBack = false;
                     this.transform.eulerAngles = this.originRotation.$clone();
+                    this.lstPointPath.clear();
+                    this.lstPointPath.AddRange(this.lstCachePointPath);
                 }));
             },
             /*Stickman.Comeback end.*/
@@ -3775,7 +3781,10 @@ if ( TRACE ) { TRACE( "Stickman#Comeback", this ); }
             OnChangeWavePoint: function (i) {
 if ( TRACE ) { TRACE( "Stickman#OnChangeWavePoint", this ); }
 
-                this.lstOldPath.add(this.arrayOriginPosLine[i].$clone());
+                this.lstPointReturnPath.add(this.lstPointPath.getItem(0).$clone());
+                this.lstPointPath.removeAt(0);
+                this.lineRenderer.positionCount = this.lstPointPath.Count;
+                this.lineRenderer.SetPositions(this.lstPointPath.ToArray());
                 var nextPos = this.GetNextPos(i);
                 if (!pc.Vec3.equals( nextPos, pc.Vec3.ZERO.clone() )) {
                     this.transform.LookAt$2(nextPos);
@@ -3783,90 +3792,43 @@ if ( TRACE ) { TRACE( "Stickman#OnChangeWavePoint", this ); }
             },
             /*Stickman.OnChangeWavePoint end.*/
 
-            /*Stickman.OnOldPathChangePoint start.*/
-            OnOldPathChangePoint: function (i) {
-if ( TRACE ) { TRACE( "Stickman#OnOldPathChangePoint", this ); }
+            /*Stickman.OnReturnPathChangePoint start.*/
+            OnReturnPathChangePoint: function (i) {
+if ( TRACE ) { TRACE( "Stickman#OnReturnPathChangePoint", this ); }
 
-                if (i === 0) {
-                    return;
+                this.curLineCount = (this.curLineCount + 1) | 0;
+                this.lineRenderer.positionCount = this.curLineCount;
+                var arrayCurPoint = System.Array.init(this.lineRenderer.positionCount, function (){
+                    return new UnityEngine.Vector3();
+                }, UnityEngine.Vector3);
+                for (var j = 0; j < this.lstPointLineReturn.Count; j = (j + 1) | 0) {
+                    if (j < this.lineRenderer.positionCount) {
+                        arrayCurPoint[j] = this.lstPointLineReturn.getItem(j).$clone();
+                    }
                 }
-                var nextPos = pc.Vec3.ZERO.clone();
-                nextPos = this.GetNextOldPathPos(((i - 1) | 0));
+                this.lineRenderer.SetPositions(arrayCurPoint);
+                var nextPos = this.GetNextReturnPathPos(i);
                 if (!pc.Vec3.equals( nextPos, pc.Vec3.ZERO.clone() )) {
                     this.transform.LookAt$2(nextPos);
                 }
             },
-            /*Stickman.OnOldPathChangePoint end.*/
+            /*Stickman.OnReturnPathChangePoint end.*/
 
             /*Stickman.GetNextPos start.*/
             GetNextPos: function (i) {
 if ( TRACE ) { TRACE( "Stickman#GetNextPos", this ); }
 
-                return this.arrayOriginPosLine[i].$clone();
+                return this.lstPointPath.getItem(i).$clone();
             },
             /*Stickman.GetNextPos end.*/
 
-            /*Stickman.GetNextOldPathPos start.*/
-            GetNextOldPathPos: function (i) {
-if ( TRACE ) { TRACE( "Stickman#GetNextOldPathPos", this ); }
+            /*Stickman.GetNextReturnPathPos start.*/
+            GetNextReturnPathPos: function (i) {
+if ( TRACE ) { TRACE( "Stickman#GetNextReturnPathPos", this ); }
 
-                return this.arrOldPath[((this.arrOldPath.length - 1) | 0)].$clone();
+                return this.lstPointReturnPath.getItem(i).$clone();
             },
-            /*Stickman.GetNextOldPathPos end.*/
-
-            /*Stickman.Update start.*/
-            Update: function () {
-if ( TRACE ) { TRACE( "Stickman#Update", this ); }
-
-                if (this.isRunning) {
-                    if (this.lineRenderer.positionCount > 1) {
-                        this.lineRenderer.SetPosition(0, this.transform.position);
-                        if (pc.Vec3.distance( this.transform.position, this.lineRenderer.GetPosition(1) ) <= this.pointRemoveThreshold) {
-                            this.RemovePoint();
-                        }
-                    }
-                }
-                if (this.isRunningBack) {
-                    if (!pc.Vec3.equals( this.lineRenderer.GetPosition(0), this.arrayOriginPosLine[0] )) {
-                        this.lineRenderer.SetPosition(0, this.transform.position);
-                        if (this.indexRemove > 0) {
-                            if (pc.Vec3.distance( this.transform.position, this.arrayOriginPosLine[this.indexRemove] ) <= this.pointRemoveThreshold) {
-                                //lineRenderer.SetPosition(0, arrayOriginPosLine[indexRemove]);
-                                this.AddPoint(this.arrayOriginPosLine[this.indexRemove]);
-                                this.indexRemove = (this.indexRemove - 1) | 0;
-                            }
-                        } else {
-                            if (pc.Vec3.distance( this.transform.position, this.arrayOriginPosLine[0] ) <= this.pointRemoveThreshold) {
-                                this.lineRenderer.SetPosition(0, this.arrayOriginPosLine[0]);
-                            }
-                        }
-                    }
-                }
-            },
-            /*Stickman.Update end.*/
-
-            /*Stickman.RemovePoint start.*/
-            RemovePoint: function () {
-if ( TRACE ) { TRACE( "Stickman#RemovePoint", this ); }
-
-                this.lstPointPath.removeAt(0);
-                this.lineRenderer.positionCount = this.lstPointPath.Count;
-                for (var i = 0; i < this.lineRenderer.positionCount; i = (i + 1) | 0) {
-                    this.lineRenderer.SetPosition(i, this.lstPointPath.getItem(i));
-                }
-                this.indexRemove = (this.indexRemove + 1) | 0;
-            },
-            /*Stickman.RemovePoint end.*/
-
-            /*Stickman.AddPoint start.*/
-            AddPoint: function (pos) {
-if ( TRACE ) { TRACE( "Stickman#AddPoint", this ); }
-
-                this.lstPointPath.insert(0, pos.$clone());
-                this.lineRenderer.positionCount = this.lstPointPath.Count;
-                this.lineRenderer.SetPositions(this.lstPointPath.ToArray());
-            },
-            /*Stickman.AddPoint end.*/
+            /*Stickman.GetNextReturnPathPos end.*/
 
             /*Stickman.OnTriggerEnter start.*/
             OnTriggerEnter: function (other) {
@@ -4207,7 +4169,7 @@ if ( TRACE ) { TRACE( "SingletonDontDestroyOnLoad$1#Awake", this ); }
     /*Level end.*/
 
     /*Stickman start.*/
-    $m("Stickman", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Action","t":8,"sn":"Action","rt":$n[0].Void},{"a":1,"n":"AddPoint","t":8,"pi":[{"n":"pos","pt":$n[1].Vector3,"ps":0}],"sn":"AddPoint","rt":$n[0].Void,"p":[$n[1].Vector3]},{"a":1,"n":"Comeback","t":8,"sn":"Comeback","rt":$n[0].Void},{"a":1,"n":"GetNextOldPathPos","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"GetNextOldPathPos","rt":$n[1].Vector3,"p":[$n[0].Int32]},{"a":1,"n":"GetNextPos","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"GetNextPos","rt":$n[1].Vector3,"p":[$n[0].Int32]},{"a":2,"n":"Init","t":8,"sn":"Init","rt":$n[0].Void},{"a":1,"n":"OnChangeWavePoint","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"OnChangeWavePoint","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"OnOldPathChangePoint","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"OnOldPathChangePoint","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"OnTriggerEnter","t":8,"pi":[{"n":"other","pt":$n[1].Collider,"ps":0}],"sn":"OnTriggerEnter","rt":$n[0].Void,"p":[$n[1].Collider]},{"a":1,"n":"RemovePoint","t":8,"sn":"RemovePoint","rt":$n[0].Void},{"a":2,"n":"SetRumAnim","t":8,"pi":[{"n":"boolean","pt":$n[0].Boolean,"ps":0}],"sn":"SetRumAnim","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"animator","t":4,"rt":$n[1].Animator,"sn":"animator"},{"a":2,"n":"arrOldPath","t":4,"rt":System.Array.type(UnityEngine.Vector3),"sn":"arrOldPath"},{"a":2,"n":"arrayOriginPosLine","t":4,"rt":System.Array.type(UnityEngine.Vector3),"sn":"arrayOriginPosLine"},{"a":1,"n":"indexRemove","t":4,"rt":$n[0].Int32,"sn":"indexRemove","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"isCanMove","t":4,"rt":$n[0].Boolean,"sn":"isCanMove","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isRunning","t":4,"rt":$n[0].Boolean,"sn":"isRunning","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isRunningBack","t":4,"rt":$n[0].Boolean,"sn":"isRunningBack","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"lineRenderer","t":4,"rt":$n[1].LineRenderer,"sn":"lineRenderer"},{"a":1,"n":"lstOldPath","t":4,"rt":$n[2].List$1(UnityEngine.Vector3),"sn":"lstOldPath"},{"a":1,"n":"lstPointPath","t":4,"rt":$n[2].List$1(UnityEngine.Vector3),"sn":"lstPointPath"},{"a":1,"n":"originRotation","t":4,"rt":$n[1].Vector3,"sn":"originRotation"},{"a":2,"n":"pointRemoveThreshold","t":4,"rt":$n[0].Single,"sn":"pointRemoveThreshold","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"speed","t":4,"rt":$n[0].Single,"sn":"speed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"timeRotate","t":4,"rt":$n[0].Single,"sn":"timeRotate","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"typeColor","t":4,"rt":TypeColor,"sn":"typeColor","box":function ($v) { return Bridge.box($v, TypeColor, System.Enum.toStringFn(TypeColor));}}]}; }, $n);
+    $m("Stickman", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Action","t":8,"sn":"Action","rt":$n[0].Void},{"a":1,"n":"Comeback","t":8,"sn":"Comeback","rt":$n[0].Void},{"a":1,"n":"GetNextPos","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"GetNextPos","rt":$n[1].Vector3,"p":[$n[0].Int32]},{"a":1,"n":"GetNextReturnPathPos","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"GetNextReturnPathPos","rt":$n[1].Vector3,"p":[$n[0].Int32]},{"a":2,"n":"Init","t":8,"sn":"Init","rt":$n[0].Void},{"a":1,"n":"OnChangeWavePoint","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"OnChangeWavePoint","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"OnReturnPathChangePoint","t":8,"pi":[{"n":"i","pt":$n[0].Int32,"ps":0}],"sn":"OnReturnPathChangePoint","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"OnTriggerEnter","t":8,"pi":[{"n":"other","pt":$n[1].Collider,"ps":0}],"sn":"OnTriggerEnter","rt":$n[0].Void,"p":[$n[1].Collider]},{"a":2,"n":"SetRumAnim","t":8,"pi":[{"n":"boolean","pt":$n[0].Boolean,"ps":0}],"sn":"SetRumAnim","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":2,"n":"animator","t":4,"rt":$n[1].Animator,"sn":"animator"},{"a":2,"n":"arrayLinePoint","t":4,"rt":$n[1].Transform,"sn":"arrayLinePoint"},{"a":1,"n":"curLineCount","t":4,"rt":$n[0].Int32,"sn":"curLineCount","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"indexRemove","t":4,"rt":$n[0].Int32,"sn":"indexRemove","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"isCanMove","t":4,"rt":$n[0].Boolean,"sn":"isCanMove","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isRunning","t":4,"rt":$n[0].Boolean,"sn":"isRunning","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"isRunningBack","t":4,"rt":$n[0].Boolean,"sn":"isRunningBack","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"lineRenderer","t":4,"rt":$n[1].LineRenderer,"sn":"lineRenderer"},{"a":1,"n":"lstCachePointPath","t":4,"rt":$n[2].List$1(UnityEngine.Vector3),"sn":"lstCachePointPath"},{"a":1,"n":"lstPointLineReturn","t":4,"rt":$n[2].List$1(UnityEngine.Vector3),"sn":"lstPointLineReturn"},{"a":1,"n":"lstPointPath","t":4,"rt":$n[2].List$1(UnityEngine.Vector3),"sn":"lstPointPath"},{"a":1,"n":"lstPointReturnPath","t":4,"rt":$n[2].List$1(UnityEngine.Vector3),"sn":"lstPointReturnPath"},{"a":1,"n":"originRotation","t":4,"rt":$n[1].Vector3,"sn":"originRotation"},{"a":2,"n":"pointRemoveThreshold","t":4,"rt":$n[0].Single,"sn":"pointRemoveThreshold","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"speed","t":4,"rt":$n[0].Single,"sn":"speed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"timeRotate","t":4,"rt":$n[0].Single,"sn":"timeRotate","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"typeColor","t":4,"rt":TypeColor,"sn":"typeColor","box":function ($v) { return Bridge.box($v, TypeColor, System.Enum.toStringFn(TypeColor));}}]}; }, $n);
     /*Stickman end.*/
 
     /*PLY01Manager start.*/

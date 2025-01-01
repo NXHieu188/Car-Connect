@@ -1,7 +1,7 @@
 {
     "version": "6.2.0",
     "projectId": "53c67b03226713b4b8cdd0815b44bf55",
-    "applicationID": 13792,
+    "applicationID": 0,
     "creativeName": "",
     "pgServer": "EU",
     "window": {
@@ -80,8 +80,8 @@
             "externalSources": [],
             "externalJSLibraries": [],
             "scriptingDefines": [],
-            "msbuildVersion": "17.10",
-            "monoVersion": "8.0.5",
+            "msbuildVersion": "17.11",
+            "monoVersion": "8.0.10",
             "dotnetVersion": ""
         },
         "assets": {
@@ -17124,7 +17124,7 @@
                     },
                     {
                         "name": "childCount#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "name#get",
@@ -26533,23 +26533,7 @@
                         "excluded": false
                     },
                     {
-                        "name": "OnOldPathChangePoint",
-                        "excluded": false
-                    },
-                    {
                         "name": "GetNextPos",
-                        "excluded": false
-                    },
-                    {
-                        "name": "GetNextOldPathPos",
-                        "excluded": false
-                    },
-                    {
-                        "name": "RemovePoint",
-                        "excluded": false
-                    },
-                    {
-                        "name": "AddPoint",
                         "excluded": false
                     },
                     {
@@ -26561,7 +26545,11 @@
                         "excluded": false
                     },
                     {
-                        "name": "Update",
+                        "name": "OnReturnPathChangePoint",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetNextReturnPathPos",
                         "excluded": false
                     }
                 ]
@@ -28334,7 +28322,7 @@
                     },
                     {
                         "name": "OnUpdate",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnStepComplete",
