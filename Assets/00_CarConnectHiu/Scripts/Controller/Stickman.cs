@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Stickman : MonoBehaviour
 {
+    public int id;
     public Transform arrayLinePoint;
     public TypeColor typeColor;
     public Animator animator;
@@ -17,17 +18,12 @@ public class Stickman : MonoBehaviour
 
     private List<Vector3> lstPointLineReturn = new List<Vector3>();
 
-    //public Vector3[] arrayOriginPosLine;
-    //public Vector3[] arrOldPath;
     public LineRenderer lineRenderer;
     public float speed;
     public float timeRotate;
     private bool isCanMove;
-    private bool isRunning;
-    private bool isRunningBack;
-    public float pointRemoveThreshold = 0.1f;
-    int indexRemove = 0;
     private Vector3 originRotation;
+    private bool isChoosed;
 
     public void Init()
     {
@@ -56,12 +52,16 @@ public class Stickman : MonoBehaviour
         if (isCanMove)
         {
             Init();
+            isChoosed = true;
             SetRumAnim(true);
             transform.DOPath(lstPointPath.ToArray(), speed, PathType.Linear, PathMode.Full3D).SetSpeedBased(true)
                 .SetEase(Ease.Linear).OnWaypointChange(OnChangeWavePoint).OnUpdate(() =>
                 {
                     lineRenderer.SetPosition(0, transform.position);
-                }).OnComplete(() => { isCanMove = true; });
+                }).OnComplete(() =>
+                {
+                    isCanMove = true;
+                });
         }
     }
 
@@ -73,7 +73,6 @@ public class Stickman : MonoBehaviour
         lstPointLineReturn.AddRange(lstPointPath.ToArray());
         lstPointLineReturn.AddRange(lstPointReturnPath.ToArray());
         SetRumAnim(true);
-        isRunningBack = true;
         curLineCount = lineRenderer.positionCount - 1;
         transform.DOPath(lstPointReturnPath.ToArray(), speed, PathType.Linear, PathMode.Full3D).SetSpeedBased(true)
             .SetEase(Ease.Linear)
@@ -135,6 +134,18 @@ public class Stickman : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("StickMan"))
+        {
+            if (isChoosed)
+            {
+                transform.DOKill();
+                isCanMove = false;
+                SetRumAnim(false);
+                GlobalInstance.Instance.gameManagerInstance.SpawnVFXCrash(transform.position);
+                GlobalInstance.Instance.gameManagerInstance.SpawnVFXFail(transform.position);
+                Comeback();
+            }
+        }
         if (other.CompareTag("Car"))
         {
             var car = other.GetComponent<Car>();
@@ -142,20 +153,31 @@ public class Stickman : MonoBehaviour
             {
                 transform.DOKill();
                 isCanMove = false;
-                isRunning = false;
                 SetRumAnim(false);
+                GlobalInstance.Instance.gameManagerInstance.SpawnVFXCrash(transform.position);
+                GlobalInstance.Instance.gameManagerInstance.SpawnVFXFail(transform.position);
                 Comeback();
             }
             else
             {
-                transform.DOKill();
-                isCanMove = false;
-                isRunning = false;
-                SetRumAnim(false);
-                car.isContainHuman = true;
-                car.Action();
-                gameObject.SetActive(false);
-                lineRenderer.positionCount = 0;
+                if (car.id == id)
+                {
+                    transform.DOKill();
+                    isCanMove = false;
+                    SetRumAnim(false);
+                    car.Action();
+                    gameObject.SetActive(false);
+                    lineRenderer.positionCount = 0;
+                }
+                else
+                {
+                    transform.DOKill();
+                    isCanMove = false;
+                    SetRumAnim(false);
+                    GlobalInstance.Instance.gameManagerInstance.SpawnVFXCrash(transform.position);
+                    GlobalInstance.Instance.gameManagerInstance.SpawnVFXFail(transform.position);
+                    Comeback();
+                }
             }
         }
     }
