@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PLY01Manager : Singleton<PLY01Manager>
 {
+    public GamePlayController gamePlayController;
     public Level level;
     public Config config;
     public GameObject vfxCrash;

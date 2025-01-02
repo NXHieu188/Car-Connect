@@ -7583,8 +7583,8 @@ MonoBehaviour:
   mainMesh: {fileID: 1097418360563146165}
   typeColor: 0
   lstSlot:
-  - {fileID: 3829305859767357666}
-  - {fileID: 338457850493332077}
+  - {fileID: 7027639772114207436}
+  - {fileID: 5743772106186095136}
   lstBooleanSlot: 000000
   lstSlotFx:
   - {fileID: 7117080622947635635}

@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 [Serializable]
 public class QueueShip
 {
@@ -16,6 +17,7 @@ public enum TypeShip
     Two,
     Three,
 }
+
 public class Ship : MonoBehaviour
 {
     public Animator animator;
@@ -33,20 +35,25 @@ public class Ship : MonoBehaviour
     {
         this.typeColor = typeColor;
         var objectColor = GlobalInstance.Instance.gameManagerInstance.config.GetObjectColor(this.typeColor);
-        mainMesh.materials[0] = objectColor.material;
+        Material[] mats = mainMesh.materials;
+        mats[0] = objectColor.material; // Thay thế material đầu tiên
+        mainMesh.materials = mats;
         for (int i = 0; i < lstSlot.Count; i++)
         {
             lstSlot[i].GetComponent<MeshRenderer>().material = objectColor.material;
         }
     }
+
     public bool CheckPositive(TypeColor typeColor)
     {
         if (typeColor == this.typeColor && isReady)
         {
             return true;
         }
+
         return false;
     }
+
     public void UpdateShip()
     {
         if (!isDone)
@@ -60,16 +67,17 @@ public class Ship : MonoBehaviour
             }
         }
     }
+
     public void CheckDone()
     {
         if (isDone)
         {
-
             //PlaySound
             transform.DOKill();
-            transform.DOMoveX(30, 0.6f).OnComplete(() =>
+            transform.DOMoveX(23, 0.7f).OnComplete(() =>
             {
-                if (GlobalInstance.Instance.gameManagerInstance.level.currentShip == GlobalInstance.Instance.gameManagerInstance.shipToWin)
+                if (GlobalInstance.Instance.gameManagerInstance.level.currentShip ==
+                    GlobalInstance.Instance.gameManagerInstance.shipToWin)
                 {
                     GlobalInstance.Instance.gameManagerInstance.Win();
                 }
@@ -82,6 +90,7 @@ public class Ship : MonoBehaviour
             });
         }
     }
+
     public void SetStayAnim(bool boolean)
     {
         animator.SetBool("Stay", boolean);

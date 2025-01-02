@@ -23,7 +23,7 @@ public class Stickman : MonoBehaviour
     public float timeRotate;
     private bool isCanMove;
     private Vector3 originRotation;
-    private bool isChoosed;
+    public bool isChoosed;
 
     public void Init()
     {
@@ -51,6 +51,8 @@ public class Stickman : MonoBehaviour
     {
         if (isCanMove)
         {
+            GlobalInstance.Instance.gameManagerInstance.gamePlayController.isCanRaycast = false;
+            isCanMove = false;
             Init();
             isChoosed = true;
             SetRumAnim(true);
@@ -60,12 +62,14 @@ public class Stickman : MonoBehaviour
                     lineRenderer.SetPosition(0, transform.position);
                 }).OnComplete(() =>
                 {
-                    isCanMove = true;
+                    GlobalInstance.Instance.gameManagerInstance.gamePlayController.isCanRaycast = true;
+                    isChoosed = false;
                 });
         }
     }
 
     private int curLineCount = 0;
+
     void Comeback()
     {
         lstPointReturnPath.Reverse();
@@ -78,21 +82,22 @@ public class Stickman : MonoBehaviour
             .SetEase(Ease.Linear)
             .OnWaypointChange(OnReturnPathChangePoint).OnUpdate(() =>
             {
-                lineRenderer.SetPosition(lineRenderer.positionCount - 1, transform.position);
+                if (lineRenderer.positionCount > 0)
+                    lineRenderer.SetPosition(lineRenderer.positionCount - 1, transform.position);
             }).OnComplete(() =>
             {
                 SetRumAnim(false);
                 isCanMove = true;
                 transform.eulerAngles = originRotation;
-                lstPointPath.Clear();
-                lstPointPath.AddRange(lstCachePointPath);
+                GlobalInstance.Instance.gameManagerInstance.gamePlayController.isCanRaycast = true;
             });
     }
 
     void OnChangeWavePoint(int i)
     {
         lstPointReturnPath.Add(lstPointPath[0]);
-        lstPointPath.RemoveAt(0);
+        if (lstPointPath.Count > 0)
+            lstPointPath.RemoveAt(0);
         lineRenderer.positionCount = lstPointPath.Count;
         lineRenderer.SetPositions(lstPointPath.ToArray());
         Vector3 nextPos = GetNextPos(i);
@@ -114,8 +119,10 @@ public class Stickman : MonoBehaviour
                 arrayCurPoint[j] = lstPointLineReturn[j];
             }
         }
+
         lineRenderer.SetPositions(arrayCurPoint);
         Vector3 nextPos = GetNextReturnPathPos(i);
+        Debug.Log("Cou: " + lstPointReturnPath[i]);
         if (nextPos != Vector3.zero)
         {
             transform.LookAt(nextPos);
@@ -124,7 +131,7 @@ public class Stickman : MonoBehaviour
 
     Vector3 GetNextPos(int i)
     {
-        return lstPointPath[i];
+        return lstCachePointPath[i + 1];
     }
 
     Vector3 GetNextReturnPathPos(int i)
@@ -138,6 +145,7 @@ public class Stickman : MonoBehaviour
         {
             if (isChoosed)
             {
+                isChoosed = false;
                 transform.DOKill();
                 isCanMove = false;
                 SetRumAnim(false);
@@ -146,11 +154,13 @@ public class Stickman : MonoBehaviour
                 Comeback();
             }
         }
+
         if (other.CompareTag("Car"))
         {
             var car = other.GetComponent<Car>();
             if (car.typeColor != typeColor)
             {
+                isChoosed = false;
                 transform.DOKill();
                 isCanMove = false;
                 SetRumAnim(false);
@@ -166,11 +176,13 @@ public class Stickman : MonoBehaviour
                     isCanMove = false;
                     SetRumAnim(false);
                     car.Action();
+                    GlobalInstance.Instance.gameManagerInstance.gamePlayController.isCanRaycast = true;
                     gameObject.SetActive(false);
                     lineRenderer.positionCount = 0;
                 }
                 else
                 {
+                    isChoosed = false;
                     transform.DOKill();
                     isCanMove = false;
                     SetRumAnim(false);

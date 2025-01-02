@@ -2480,6 +2480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 518374544364089288}
   - component: {fileID: 4453871681971365123}
+  - component: {fileID: 4946447677839588991}
   m_Layer: 0
   m_Name: ShipOne
   m_TagString: Untagged
@@ -2502,7 +2503,7 @@ Transform:
   - {fileID: 196287364525214776}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_LocalEulerAnglesHint: {x: -10, y: 0, z: 0}
 --- !u!114 &4453871681971365123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2520,13 +2521,34 @@ MonoBehaviour:
   mainMesh: {fileID: 5125013396258565584}
   typeColor: 0
   lstSlot:
-  - {fileID: 1667037943333521881}
+  - {fileID: 7256995101515555903}
   lstBooleanSlot: 000000
   lstSlotFx:
   - {fileID: 450086813306298487}
   isReady: 0
   isDone: 0
   indexBox: 0
+--- !u!95 &4946447677839588991
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7471876369464799352}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cda3f6e8cb357e747875c4212f6a79bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7730448895535730206
 GameObject:
   m_ObjectHideFlags: 0

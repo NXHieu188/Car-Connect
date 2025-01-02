@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GamePlayController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class GamePlayController : MonoBehaviour
     public ParticleSystem fxTap;
     private RaycastHit hit;
     private Ray ray;
+    public bool isCanRaycast;
     private void Update()
     {
         if (!GlobalInstance.Instance.gameManagerInstance.isEndGame)
@@ -30,12 +32,15 @@ public class GamePlayController : MonoBehaviour
                     fxTap.Play();
                 }
 
-                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity, 1 << 6))
+                if (isCanRaycast)
                 {
-                    Transform select = hit.transform;
-                    Stickman stick = select.GetComponent<Stickman>();
-                    stick.Action();
+                    ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    if (Physics.Raycast(ray, out hit, Mathf.Infinity, 1 << 6))
+                    {
+                        Transform select = hit.transform;
+                        Stickman stick = select.GetComponent<Stickman>();
+                        stick.Action();
+                    }
                 }
             }
         }
