@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00_CarConnectHiu/Scenes/PLY01.unity
     guid: a04f69a3c2f4e5d4090aeb89853a1f9b
+  - enabled: 1
+    path: Assets/00_CarConnectHiu/Scenes/EC1.unity
+    guid: 5ff7838368222924d92201fb7af4721a
   m_configObjects: {}

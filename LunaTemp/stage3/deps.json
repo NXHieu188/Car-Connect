@@ -1,94 +1,101 @@
 {
   "ignores": [
-    "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/EventDispatcher/EventDispatcher.cs",
-    "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/VectorUlti.cs",
-    "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs",
-    "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs",
-    "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
-    "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
-    "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
-    "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/EventDispatcher/EventDispatcher.cs",
+    "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/VectorUlti.cs",
+    "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs",
+    "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs",
+    "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
+    "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
+    "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
   ],
   "groups": [
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/Car.cs",
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/Stickman.cs",
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/GamePlayController.cs",
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Manager/PLY01Manager.cs",
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/GlobalInstance.cs",
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/Singleton.cs",
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/AudioManager.cs",
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/Level.cs",
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/DefineHelper.cs",
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/EventDispatcher/EventDispatcher.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/CameraController.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Manager/PLY01Manager.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/Car.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/Level.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/Ship.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/DefineHelper.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/Config.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/Stickman.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/GamePlayController.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/GlobalInstance.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/Responsive.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/Singleton.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/AudioManager.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/EventDispatcher/EventDispatcher.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/ParkingSlot.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/HelperUtility.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/SimplePool.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/AutoDestroy.cs",
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/AutoDestructor.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/AutoDestroy.cs",
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/SimplePool.cs",
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/AutoDestructor.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Controller/StickmanEC.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/DoTweenMove.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Manager/EC01.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/DoTweenMoveUI.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/DoTweenMove.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/HelperUtility.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/DoTweenMoveUI.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/LookAtCamera.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/LookAtCamera.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/LookAtTarget.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/LookAtTarget.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/LunaPool/LunaPool.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/LunaPool/LunaPool.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/RotateObject.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/RotateObject.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/SlidingNumber.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/SlidingNumber.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/UpdateSkinnedMesh.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/UpdateSkinnedMesh.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/VectorUlti.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/00_CarConnectHiu/Scripts/Utility/VectorUlti.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/Project/Publishing/CarConnect/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+      "H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage3/processed-scripts/Assets/Plugin/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/LunaDownload/6.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+      "H:/LunaPLY/LunaDown/6.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/LunaDownload/6.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+      "H:/LunaPLY/LunaDown/6.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
     ],
     [
-      "D:/Programmer/PlayableAds/Luna/LunaDownload/6.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+      "H:/LunaPLY/LunaDown/6.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
     ]
   ]
 }

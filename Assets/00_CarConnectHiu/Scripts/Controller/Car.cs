@@ -12,7 +12,7 @@ public class Car : MonoBehaviour
     private bool isMoving;
     public bool isCarInParking;
     public float speed;
-    private float delay = 0.3f;
+    private float delay = 0.15f;
 
     public void Action()
     {
@@ -36,8 +36,8 @@ public class Car : MonoBehaviour
                     {
                         if (!level.lstShip[i].lstBooleanSlot[j])
                         {
-                            level.lstShip[i].SetStayAnim(true);
-                            MoveToShip(level.lstShip[i].lstSlot[j].position, level.lstShip[i], j);
+                            level.lstShip[i].animator.speed = 0;
+                            MoveToShip(level.lstShip[i].lstSlot[j].position, level.lstShip[i], j, true);
                             level.lstShip[i].UpdateShip();
                             isMoveParkingSlot = false;
                             boxCollider.enabled = false;
@@ -65,20 +65,18 @@ public class Car : MonoBehaviour
         }
     }
 
-    public void MoveToShip(Vector3 pos, Ship ship, int indexCarInShip)
+    public void MoveToShip(Vector3 pos, Ship ship, int indexCarInShip, bool isHasDelay)
     {
         isMoving = true;
         transform.DOKill();
         transform.DORotate(Vector3.zero, speed).SetDelay(delay);
-        Vector3 posConfig = new Vector3(pos.x - ship.animator.transform.localPosition.x, pos.y,
-            pos.z - ship.animator.transform.localPosition.z);
-        transform.DOMove(posConfig, speed).SetEase(Ease.Linear).SetDelay(delay).OnComplete(() =>
+        transform.DOMove(pos, speed).SetEase(Ease.Linear).SetDelay(delay).OnComplete(() =>
         {
+            transform.parent = ship.containCar;
             transform.DOKill();
             ship.lstSlotFx[indexCarInShip].Play();
             //PlaySoundCarIn
-            ship.SetStayAnim(false);
-            transform.parent = ship.containCar;
+            ship.animator.speed = 1;
             if (indexCarInShip == ship.lstSlot.Count - 1)
             {
                 ship.CheckDone();
@@ -91,11 +89,9 @@ public class Car : MonoBehaviour
         isMoving = true;
         transform.DOKill();
         transform.parent = GlobalInstance.Instance.gameManagerInstance.level.grParkingSlot;
-        transform.DORotate(new Vector3(0f, 335f, 0f), speed / 1.2f).SetDelay(delay);
-        transform.DOMove(pos, speed * 1.2f).SetEase(Ease.Linear).SetDelay(delay).OnComplete(() =>
+        transform.DORotate(new Vector3(0f, 335f, 0f), speed / 1.3f).SetDelay(delay);
+        transform.DOMove(pos, speed / 1.3f).SetEase(Ease.Linear).SetDelay(delay).OnComplete(() =>
         {
-            //transform.rotation = Quaternion.Euler(new Vector3(0f, 335f, 0f));
-
             StartCoroutine(HelperUtility.StartAction(() =>
             {
                 //Sound Go To Parking

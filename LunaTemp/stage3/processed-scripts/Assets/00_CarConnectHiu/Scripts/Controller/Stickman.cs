@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Stickman : MonoBehaviour
 {
+    public int id;
     public Transform arrayLinePoint;
     public TypeColor typeColor;
     public Animator animator;
@@ -17,17 +18,12 @@ public class Stickman : MonoBehaviour
 
     private List<Vector3> lstPointLineReturn = new List<Vector3>();
 
-    //public Vector3[] arrayOriginPosLine;
-    //public Vector3[] arrOldPath;
     public LineRenderer lineRenderer;
     public float speed;
     public float timeRotate;
     private bool isCanMove;
-    private bool isRunning;
-    private bool isRunningBack;
-    public float pointRemoveThreshold = 0.1f;
-    int indexRemove = 0;
     private Vector3 originRotation;
+    public bool isChoosed;
 
     public void Init()
     {
@@ -55,17 +51,21 @@ public class Stickman : MonoBehaviour
     {
         if (isCanMove)
         {
+            GlobalInstance.Instance.gameManagerInstance.gamePlayController.isCanRaycast = false;
+            isCanMove = false;
             Init();
+            isChoosed = true;
             SetRumAnim(true);
             transform.DOPath(lstPointPath.ToArray(), speed, PathType.Linear, PathMode.Full3D).SetSpeedBased(true)
                 .SetEase(Ease.Linear).OnWaypointChange(OnChangeWavePoint).OnUpdate(() =>
                 {
                     lineRenderer.SetPosition(0, transform.position);
-                }).OnComplete(() => { isCanMove = true; });
+                });
         }
     }
 
     private int curLineCount = 0;
+
     void Comeback()
     {
         lstPointReturnPath.Reverse();
@@ -73,27 +73,28 @@ public class Stickman : MonoBehaviour
         lstPointLineReturn.AddRange(lstPointPath.ToArray());
         lstPointLineReturn.AddRange(lstPointReturnPath.ToArray());
         SetRumAnim(true);
-        isRunningBack = true;
         curLineCount = lineRenderer.positionCount - 1;
         transform.DOPath(lstPointReturnPath.ToArray(), speed, PathType.Linear, PathMode.Full3D).SetSpeedBased(true)
             .SetEase(Ease.Linear)
             .OnWaypointChange(OnReturnPathChangePoint).OnUpdate(() =>
             {
-                lineRenderer.SetPosition(lineRenderer.positionCount - 1, transform.position);
+                if (lineRenderer.positionCount > 0)
+                    lineRenderer.SetPosition(lineRenderer.positionCount - 1, transform.position);
             }).OnComplete(() =>
             {
                 SetRumAnim(false);
                 isCanMove = true;
                 transform.eulerAngles = originRotation;
-                lstPointPath.Clear();
-                lstPointPath.AddRange(lstCachePointPath);
+                GlobalInstance.Instance.gameManagerInstance.gamePlayController.isCanRaycast = true;
+                GlobalInstance.Instance.gameManagerInstance.EndCinema();
             });
     }
 
     void OnChangeWavePoint(int i)
     {
         lstPointReturnPath.Add(lstPointPath[0]);
-        lstPointPath.RemoveAt(0);
+        if (lstPointPath.Count > 0)
+            lstPointPath.RemoveAt(0);
         lineRenderer.positionCount = lstPointPath.Count;
         lineRenderer.SetPositions(lstPointPath.ToArray());
         Vector3 nextPos = GetNextPos(i);
@@ -115,6 +116,7 @@ public class Stickman : MonoBehaviour
                 arrayCurPoint[j] = lstPointLineReturn[j];
             }
         }
+
         lineRenderer.SetPositions(arrayCurPoint);
         Vector3 nextPos = GetNextReturnPathPos(i);
         if (nextPos != Vector3.zero)
@@ -125,37 +127,75 @@ public class Stickman : MonoBehaviour
 
     Vector3 GetNextPos(int i)
     {
-        return lstPointPath[i];
+        if (lstCachePointPath.Count - 1 < i)
+            return Vector3.zero;
+        return lstCachePointPath[i + 1];
     }
 
     Vector3 GetNextReturnPathPos(int i)
     {
+        if (lstPointReturnPath.Count - 1 < i)
+            return Vector3.zero;
         return lstPointReturnPath[i];
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("StickMan"))
+        {
+            if (isChoosed)
+            {
+                isChoosed = false;
+                transform.DOKill();
+                isCanMove = false;
+                SetRumAnim(false);
+                GlobalInstance.Instance.gameManagerInstance.SpawnVFXCrash(transform.position);
+                GlobalInstance.Instance.gameManagerInstance.SpawnVFXFail(transform.position);
+                AudioManager.Instance.PlaySoundImpact();
+                Comeback();
+            }
+        }
+
         if (other.CompareTag("Car"))
         {
             var car = other.GetComponent<Car>();
             if (car.typeColor != typeColor)
             {
+                isChoosed = false;
                 transform.DOKill();
                 isCanMove = false;
-                isRunning = false;
                 SetRumAnim(false);
+                GlobalInstance.Instance.gameManagerInstance.SpawnVFXCrash(transform.position);
+                GlobalInstance.Instance.gameManagerInstance.SpawnVFXFail(transform.position);
+                AudioManager.Instance.PlaySoundImpact();
                 Comeback();
             }
             else
             {
-                transform.DOKill();
-                isCanMove = false;
-                isRunning = false;
-                SetRumAnim(false);
-                car.isContainHuman = true;
-                car.Action();
-                gameObject.SetActive(false);
-                lineRenderer.positionCount = 0;
+                if (car.id == id)
+                {
+                    transform.DOKill();
+                    isCanMove = false;
+                    SetRumAnim(false);
+                    car.Action();
+                    GlobalInstance.Instance.gameManagerInstance.gamePlayController.isCanRaycast = true;
+                    GlobalInstance.Instance.gameManagerInstance.level.totalCar--;
+                    AudioManager.Instance.PlaySoundCarExit();
+                    lineRenderer.positionCount = 0;
+                    gameObject.SetActive(false);
+
+                }
+                else
+                {
+                    isChoosed = false;
+                    transform.DOKill();
+                    isCanMove = false;
+                    SetRumAnim(false);
+                    GlobalInstance.Instance.gameManagerInstance.SpawnVFXCrash(transform.position);
+                    GlobalInstance.Instance.gameManagerInstance.SpawnVFXFail(transform.position);
+                    AudioManager.Instance.PlaySoundImpact();
+                    Comeback();
+                }
             }
         }
     }

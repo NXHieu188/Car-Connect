@@ -60,10 +60,6 @@ public class Stickman : MonoBehaviour
                 .SetEase(Ease.Linear).OnWaypointChange(OnChangeWavePoint).OnUpdate(() =>
                 {
                     lineRenderer.SetPosition(0, transform.position);
-                }).OnComplete(() =>
-                {
-                    GlobalInstance.Instance.gameManagerInstance.gamePlayController.isCanRaycast = true;
-                    isChoosed = false;
                 });
         }
     }
@@ -90,6 +86,7 @@ public class Stickman : MonoBehaviour
                 isCanMove = true;
                 transform.eulerAngles = originRotation;
                 GlobalInstance.Instance.gameManagerInstance.gamePlayController.isCanRaycast = true;
+                GlobalInstance.Instance.gameManagerInstance.EndCinema();
             });
     }
 
@@ -122,7 +119,6 @@ public class Stickman : MonoBehaviour
 
         lineRenderer.SetPositions(arrayCurPoint);
         Vector3 nextPos = GetNextReturnPathPos(i);
-        Debug.Log("Cou: " + lstPointReturnPath[i]);
         if (nextPos != Vector3.zero)
         {
             transform.LookAt(nextPos);
@@ -131,11 +127,15 @@ public class Stickman : MonoBehaviour
 
     Vector3 GetNextPos(int i)
     {
+        if (lstCachePointPath.Count - 1 < i)
+            return Vector3.zero;
         return lstCachePointPath[i + 1];
     }
 
     Vector3 GetNextReturnPathPos(int i)
     {
+        if (lstPointReturnPath.Count - 1 < i)
+            return Vector3.zero;
         return lstPointReturnPath[i];
     }
 
@@ -151,6 +151,7 @@ public class Stickman : MonoBehaviour
                 SetRumAnim(false);
                 GlobalInstance.Instance.gameManagerInstance.SpawnVFXCrash(transform.position);
                 GlobalInstance.Instance.gameManagerInstance.SpawnVFXFail(transform.position);
+                AudioManager.Instance.PlaySoundImpact();
                 Comeback();
             }
         }
@@ -166,6 +167,7 @@ public class Stickman : MonoBehaviour
                 SetRumAnim(false);
                 GlobalInstance.Instance.gameManagerInstance.SpawnVFXCrash(transform.position);
                 GlobalInstance.Instance.gameManagerInstance.SpawnVFXFail(transform.position);
+                AudioManager.Instance.PlaySoundImpact();
                 Comeback();
             }
             else
@@ -177,8 +179,11 @@ public class Stickman : MonoBehaviour
                     SetRumAnim(false);
                     car.Action();
                     GlobalInstance.Instance.gameManagerInstance.gamePlayController.isCanRaycast = true;
-                    gameObject.SetActive(false);
+                    GlobalInstance.Instance.gameManagerInstance.level.totalCar--;
+                    AudioManager.Instance.PlaySoundCarExit();
                     lineRenderer.positionCount = 0;
+                    gameObject.SetActive(false);
+
                 }
                 else
                 {
@@ -188,6 +193,7 @@ public class Stickman : MonoBehaviour
                     SetRumAnim(false);
                     GlobalInstance.Instance.gameManagerInstance.SpawnVFXCrash(transform.position);
                     GlobalInstance.Instance.gameManagerInstance.SpawnVFXFail(transform.position);
+                    AudioManager.Instance.PlaySoundImpact();
                     Comeback();
                 }
             }

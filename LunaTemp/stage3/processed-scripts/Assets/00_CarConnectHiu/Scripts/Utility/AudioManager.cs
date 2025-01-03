@@ -6,28 +6,36 @@ public class AudioManager : Singleton<AudioManager>
 {
     public AudioSource audioSourceFX;
     public AudioSource audioSourceBG;
-    public AudioClip clipPass, clipLose,clipAwesome,clipWin,clipWarning;
+    public AudioClip clipClick, clipImpact, clipCarExit, clipShipMove, clipRun, clipLose, clipWin;
 
     public void PlaySoundBG()
     {
         audioSourceBG.Play();
     }
 
-    public void PlaySoundClipPass()
+    public void PlaySoundClick()
     {
-        PlaySoundFX(clipPass);
+        PlaySoundFX(clipClick);
     }
-    public void PlaySoundClipWarning()
+    public void PlaySoundImpact()
     {
-        PlaySoundFX(clipWarning);
+        PlaySoundFX(clipImpact);
+    }
+    public void PlaySoundRun()
+    {
+        PlaySoundFX(clipRun);
+    }
+    public void PlaySoundCarExit()
+    {
+        PlaySoundFX(clipCarExit);
+    }
+    public void PlaySoundShipMove()
+    {
+        PlaySoundFX(clipShipMove);
     }
     public void PlaySoundClipLose()
     {
         PlaySoundFX(clipLose);
-    }
-    public void PlaySoundClipAwesome()
-    {
-        PlaySoundFX(clipAwesome);
     }
     public void PlaySoundClipWin()
     {

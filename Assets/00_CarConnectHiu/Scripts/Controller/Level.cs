@@ -7,6 +7,7 @@ using UnityEngine;
 public class Level : MonoBehaviour
 {
     public List<GameObject> lstCouple = new List<GameObject>();
+    public int totalCar = 0;
     public List<Ship> lstShip = new List<Ship>();
     public List<QueueShip> queueShip;
     public List<Transform> lstPosShipSpawn = new List<Transform>();
@@ -25,6 +26,7 @@ public class Level : MonoBehaviour
         {
             var stickMan = lstCouple[i].transform.GetChild(2).GetComponent<Stickman>();
             stickMan.Init();
+            totalCar++;
         }
         SpawnShipPredenfined(2);
     }
@@ -66,24 +68,23 @@ public class Level : MonoBehaviour
 
             count++;
         }
-        currentShip += 2;
         queueShip.RemoveAt(0);
         queueShip.RemoveAt(0);
     }
 
     public void SpawnShipPredenfinedNext(int index)
     {
-        lstShip[lstShip.Count - 1].DOKill();
-        //Sound ship move
-        currentShip += 1;
-        lstShip[0].transform.DOMoveX(lstPosShipSpawn[0].position.x, 0.3f).OnComplete(
-        () =>
+        if (lstShip.Count > 0)
         {
-            lstShip[0].isReady = true;
-            UpdateCarParking();
-        });
-
-
+            lstShip[lstShip.Count - 1].DOKill();
+            //Sound ship move
+            lstShip[0].transform.DOMoveX(lstPosShipSpawn[0].position.x, 0.4f).OnComplete(
+            () =>
+            {
+                lstShip[0].isReady = true;
+                UpdateCarParking();
+            });
+        }
         int count = 0;
         for (int i = 0; i < queueShip.Count; i++)
         {
@@ -121,7 +122,8 @@ public class Level : MonoBehaviour
             }
             count++;
         }
-        queueShip.RemoveAt(0);
+        if (queueShip.Count > 0)
+            queueShip.RemoveAt(0);
     }
 
     void UpdateCarParking()
