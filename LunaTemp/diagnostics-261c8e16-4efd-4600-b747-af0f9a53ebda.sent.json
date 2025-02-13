@@ -1,0 +1,112 @@
+{
+    "BuildID": "261c8e16-4efd-4600-b747-af0f9a53ebda",
+    "Command": "project:build",
+    "ProjectID": "53c67b03226713b4b8cdd0815b44bf55",
+    "ProjectStateHash": "a0dd1a1c38c331e515ad061813ad65bf8abe475928c178fcac3f8d19e5bc4369",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1738731915572,
+    "EndTime": 1738731974698,
+    "PlaygroundUserID": 8338,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "develop",
+    "UnityVersion": "2021.3.33f1",
+    "LunaVersion": "6.2.0",
+    "LogCount": 4,
+    "Logs": [
+        {
+            "LogID": "94bc4727-2c61-4a93-b73a-552f1389c362",
+            "Order": 3,
+            "Timestamp": 1738731975069,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "99d47f54-49fc-46d9-bb29-0f26039e8a24",
+            "Order": 3,
+            "Timestamp": 1738731975069,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3011",
+            "Description": "You are not using any LunaPlaygroundFields attributes.",
+            "Details": [
+                "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": null,
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "f91b9dc6-5531-47b2-b7ce-04bad5ec68b0",
+            "Order": 0,
+            "Timestamp": 1738731926160,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of ParticleSystem Component",
+            "Details": [
+                "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 80."
+            ],
+            "DescriptionValues": [
+                "ParticleSystem"
+            ],
+            "DetailsValues": [
+                "ParticleSystem",
+                "10",
+                "80"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "7447afa2-1065-4cda-8322-ec435fc5beb6",
+            "Order": 1,
+            "Timestamp": 1738731926161,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1022",
+            "Description": "Extensive use of shader variants",
+            "Details": [
+                "Extensive usage of shader variants negatively affects playable startup time. Please consider them to be less than 20 (22 found). Check Runtime analysis -> shader tab to see used shaders."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "20",
+                "22"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}

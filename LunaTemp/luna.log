@@ -1,35 +1,37 @@
-report@config:load 46.24
-Authorized using stored user info.
-report@account:authorize 11.27
+report@config:load 56.40
+Found a stored user info, but it is no longer valid.
+Permissions were validated successfully.
+report@account:authorize 1719.95
 stderr: 'rm' is not recognized as an internal or external command,
 operable program or batch file.
 
-Exporting assets from Unity........
+Exporting assets from Unity...........
 
 [ Stage1 ] Assets exported from Unity and staged for further processing
-report@unity:export 5067.64
-report@config:load 37.63
-Using H:/LunaPLY/Atomic/CarConnectt/Assets/_Game/Fonts/LilitaOne-Regular.ttf file to generate an atlas for LilitaOne-Regular[26112] font
+report@unity:export 8200.29
+report@config:load 204.11
+Using H:/LunaPLY/Atomic/CarConnectt/Assets/_Game/Fonts/LilitaOne-Regular.ttf file to generate an atlas for LilitaOne-Regular[26070] font
   Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
-Combined 97 glyphs into bitmap texture at H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage1/tmp/fonts/LilitaOne-Regular-26112/output_0.png (57kb)
+Combined 97 glyphs into bitmap texture at H:/LunaPLY/Atomic/CarConnectt/LunaTemp/stage1/tmp/fonts/LilitaOne-Regular-26070/output_0.png (57kb)
 Resources:
 {}
-report@assets:stage2 3503.82
-report@assets:stage3 323.29
+report@assets:stage2 9089.67
+report@assets:stage3 600.98
 [ Stage2 ] Assets postprocessed and bundled successfully
-report@config:unity 0.35
-report@config:load 59.43
-report@config:unity 0.32
-report@code:compose 380.50
+report@config:unity 0.23
+report@config:load 53.21
+report@config:unity 0.15
+report@code:compose 886.33
 Authorized using stored user info.
-report@account:authorize 3.85
+report@account:authorize 4.74
 MSBuild version 17.10.4+10fbfbf2e for .NET Framework
 
-Build started 1/3/2025 4:02:32 PM.
+Build started 2/5/2025 12:05:50 PM.
 
 
 
 Project "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" on node 1 (Rebuild target(s)).
+
 CoreClean:
   Deleting file "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll".
 
@@ -42,9 +44,7 @@ CoreClean:
   Deleting file "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
 
   Deleting file "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
-
   Deleting file "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
-
   Deleting file "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
 
   Deleting file "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
@@ -79,6 +79,8 @@ CoreClean:
 
   Deleting file "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
 
+  Deleting file "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Cinemachine.dll".
+
   Deleting file "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache".
 
   Deleting file "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache".
@@ -93,49 +95,50 @@ GenerateTargetFrameworkMonikerAttribute:
 Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
 
 CoreCompile:
-  C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2021;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2021_3;UNITY_2021_3_33 /highentropyva+ /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\CameraController.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\Car.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\Config.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\GamePlayController.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\Level.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\ParkingSlot.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\Responsive.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\Ship.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\Stickman.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\StickmanEC.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Manager\EC01.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Manager\PLY01Manager.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\AudioManager.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\AutoDestroy.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\AutoDestructor.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\DefineHelper.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\DoTweenMove.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\DoTweenMoveUI.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\EventDispatcher\EventDispatcher.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\GlobalInstance.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\HelperUtility.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\LookAtCamera.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\LookAtTarget.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\LunaPool\LunaPool.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\RotateObject.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\SimplePool.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\Singleton.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\SlidingNumber.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\UpdateSkinnedMesh.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\VectorUlti.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs H:\LunaPLY\Atomic\C
-arConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModuleUI.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2021;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2021_3;UNITY_2021_3_33 /highentropyva+ /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\package
+s\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\CameraController.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\Car.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\Config.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\GamePlayController.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\Level.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\ParkingSlot.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\Responsive.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\Ship.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\Stickman.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Controller\StickmanEC.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Manager\EC01.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Manager\PLY01Manager.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\AudioManager.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\AutoDestroy.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\AutoDestructor.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\DefineHelper.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\DoTweenMove.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\DoTweenMoveUI.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\EventDispatcher\EventDispatcher.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\GlobalInstance.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\HelperUtility.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\LookAtCamera.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\LookAtTarget.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\LunaPool\LunaPool.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\RotateObject.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\SimplePool.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\Singleton.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\SlidingNumber.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\UpdateSkinnedMesh.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\VectorUlti.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModuleUI.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\Plugin\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
 
 H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\AutoDestructor.cs(14,42): warning CS0649: Field 'AutoDestructor.typeDestroy' is never assigned to, and will always have its default value [H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
   CompilerServer: server - server processed compilation - Scripts
 
 _CopyFilesMarkedCopyLocal:
-
-  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
 
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
-
-  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
 
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
 
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
 
-  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
+  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
 
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
-  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
 
-  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
 
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
 
-  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
-
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+
+  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
 
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
+  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
 
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.xml" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
 
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
-  Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
 
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
 
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
+
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
 
   Copying file from "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml" to "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
@@ -167,28 +170,27 @@ Done Building Project "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler
 Build succeeded.
 
 
-
 "H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target) (1) ->
+
 (CoreCompile target) -> 
   H:\LunaPLY\Atomic\CarConnectt\LunaTemp\stage3\processed-scripts\Assets\00_CarConnectHiu\Scripts\Utility\AutoDestructor.cs(14,42): warning CS0649: Field 'AutoDestructor.typeDestroy' is never assigned to, and will always have its default value [H:\LunaPLY\LunaDown\6.2.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
     1 Warning(s)
     0 Error(s)
 
-
-Time Elapsed 00:00:13.45
+Time Elapsed 00:00:16.94
 
 Source code compiled successfully!
 ﻿
 [ error ] $﻿
 Diagnostics gathered successfully
-report@code:build 21962.81
-report@diagnostics:verify 0.45
-report@diagnostics:upload 2245.64
-report@code:stage 14942.83
+report@code:build 38285.43
+report@diagnostics:verify 0.57
+report@diagnostics:upload 2359.25
+report@code:stage 17139.14
 [ Stage3 ] Code compiled and bundled successfully.
-report@code:bundle 39602.07
-report@package:stage 139044.36
-[ Stage4 ] Target platform: playground
+report@code:bundle 58733.74
+report@package:stage 3360.60
+[ Stage4 ] Target platform: develop
 [ Stage4 ] Package bundled successfully
-report@assets:stats 0.53
+report@assets:stats 0.24
